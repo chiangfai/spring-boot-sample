@@ -5,7 +5,7 @@ spring:
     name: mail
   mail:
     username: chiangfai@vip.qq.com
-    password: jkqobvuheupycade
+    password: jkqobvuheupycade # QQ Email生成登录第三方的密码
     host: smtp.qq.com
     properties:
       mail:
