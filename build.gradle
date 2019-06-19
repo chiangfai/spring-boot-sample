@@ -87,7 +87,7 @@ subprojects {
 
         // https://github.com/apache/dubbo-spring-boot-project/tree/2.7.x
         implementation platform ("org.apache.dubbo:dubbo-dependencies-bom:$ver.dubbo")
-        implementation ("org.apache.dubbo:dubbo:$ver.dubbo")
+        implementation platform ("org.apache.dubbo:dubbo:$ver.dubbo")
 
         testCompile 'org.springframework.boot:spring-boot-starter-test'
         //添加本地第三方依赖
@@ -115,7 +115,7 @@ configure(dubboProjects) {
     dependencies {
         implementation (
                 "org.apache.dubbo:dubbo-spring-boot-starter:$ver.dubbo",
-                'org.apache.dubbo:dubbo',
+                "org.apache.dubbo:dubbo",
                 "org.apache.dubbo:dubbo-dependencies-zookeeper:$ver.dubbo"
         )
     }

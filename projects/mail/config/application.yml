@@ -1,0 +1,15 @@
+server:
+  port: 4444
+spring:
+  application:
+    name: mail
+  mail:
+    username: chiangfai@vip.qq.com
+    password: jkqobvuheupycade
+    host: smtp.qq.com
+    properties:
+      mail:
+        smtp:
+          connectiontimeout: 5000
+          timeout: 3000
+          writetimeout: 5000
