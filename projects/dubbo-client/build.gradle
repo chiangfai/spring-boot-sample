@@ -1,0 +1,6 @@
+dependencies {
+    implementation project(':dubbo-api')
+    implementation (
+            'org.springframework.boot:spring-boot-starter-web'
+    )
+}

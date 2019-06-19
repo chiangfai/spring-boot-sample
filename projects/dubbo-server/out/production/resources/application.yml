@@ -1,0 +1,27 @@
+server:
+  port: 1111
+spring:
+  application:
+    name: dubbo-server
+dubbo:
+  #application:
+    #name: ${spring.application.name} # The default value of dubbo.application.name is ${spring.application.name}
+  service:
+    version: 0.0.1
+  scan:
+    base-packages: org.springboot.dubbo.server.service
+  # test env N/A
+  #registry:
+    #address: N/A #直连，开发时候使用
+  #protocol:
+    #name: dubbo
+    #port: 12345
+  # prod env zookeeper
+  registry:
+    address: zookeeper://127.0.0.1:${embedded.zookeeper.port}
+  protocol:
+    port: -1 # 随机端口
+    name: dubbo
+embedded:
+  zookeeper:
+    port: 2181

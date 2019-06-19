@@ -1,0 +1,10 @@
+ext {
+    ver = [
+            lombok: '1.18.6',
+            dubbo: '2.7.1'
+    ]
+
+    libs = [
+            'lombok': "org.projectlombok:lombok:$ver.lombok"
+    ]
+}
