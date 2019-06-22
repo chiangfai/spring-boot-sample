@@ -1,7 +1,19 @@
 .gradle
 /build/
 !gradle/wrapper/gradle-wrapper.jar
+
 apache-zookeeper-3.5.5/
+elasticsearch-7.1.1-windows-x86_64.zip
+elasticsearch-7.1.1/
+kibana-7.1.1-windows-x86_64/
+kibana-7.1.1-windows-x86_64.zip
+
+elasticsearch-5.6.16/
+elasticsearch-5.6.16.zip
+kibana-5.6.16-windows-x86/
+kibana-5.6.16-windows-x86.zip
+
+elasticsearch-analysis-ik-5.6.16.zip
 
 ### STS ###
 .apt_generated

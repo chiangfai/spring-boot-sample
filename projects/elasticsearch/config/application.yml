@@ -1,0 +1,9 @@
+server:
+  port: 5555
+spring:
+  application:
+    name: elasticsearch
+  data:
+    elasticsearch:
+      cluster-name: es-server
+      cluster-nodes: 127.0.0.1:9300

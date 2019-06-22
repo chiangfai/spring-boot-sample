@@ -1,0 +1,16 @@
+dependencies {
+    implementation (
+            'org.springframework.boot:spring-boot-starter-web',
+            'org.springframework.boot:spring-boot-starter-data-elasticsearch',
+            'com.google.guava:guava'
+    )
+    //java.lang.IllegalStateException: Received handshake message from unsupported version: [5.0.0] minimal compatible version is: [6.8.0]
+    //implementation ('org.springframework.boot:spring-boot-starter-data-elasticsearch') {
+        //exclude group: 'org.elasticsearch.client', module: 'transport'
+    //}
+}
+
+//全局配置中排除
+//configurations {
+    //all*.exclude group: 'org.elasticsearch.client', module: 'transport'
+//}
